@@ -161,12 +161,12 @@ footer section p{
   }
 
   footer nav ul li a {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
 @media screen and (max-width: 1024px) {
   footer nav ul li a {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }

@@ -202,12 +202,8 @@ function Galeria(){
                 <section class="tarjeta">
                     <a href={Tratada24}>
                         <img src={Imagen24} alt="Imagen"/>
-                        
                     </a>
                 </section>
-                
-                
-                
             </section>
             </main>
         </div>

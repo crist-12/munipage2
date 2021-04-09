@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
-import BrandHeader from "./components/header/BrandHeader/brandHeader";
+import BrandHeader from "./Components/header/BrandHeader/brandHeader";
 import { BrowserRouter as Router, MemoryRouter, Route, Switch} from 'react-router-dom';
-import Index from './components/pages/index/index';
-import MuniApp from './components/pages/muniapp/muniapp';
-import Galeria from './components/pages/galeria/Galeria'
+import Index from './Components/pages/index/index';
+import MuniApp from './Components/pages/muniapp/muniapp';
+import Galeria from './Components/pages/galeria/Galeria.js'
+import Footer from './Components/Footer/Footer'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -41,6 +42,7 @@ function App() {
           </Route>
         </Switch>
       </section>
+      <Footer></Footer>
     </Router>
   );
 }
