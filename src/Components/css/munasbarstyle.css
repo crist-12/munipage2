@@ -1,0 +1,230 @@
+
+body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-size:100%;
+    font-size:1em;
+   
+}
+
+  /*Informacion*/
+  main {
+    margin-top:1rem;
+    width: 100%;
+  }
+/*Section 1*/
+main section.muna{
+    padding-top:1rem ;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.muna img{
+    max-width: 15vw;
+    max-height: 15vh;
+    
+}
+main section.muna h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+}
+/*Section 1*/
+  
+  /*Parallax1*/
+  main section.uno{
+      border-radius: 2%;
+      margin: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #5f5d5d;
+      align-items: center;
+      justify-content: center;
+  }
+ 
+  main section.uno div.card{
+    
+    margin: 2rem;
+    border-radius: 5%;
+    height: 30rem;
+    width: 18rem;
+    background-color: #fdfdfd;
+    box-shadow: 0px 10px 15px rgb(37, 37, 37);
+  
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+main section.uno div.card:hover{
+    
+  
+  box-shadow: 0px 0px 15px rgb(253, 253, 253);
+  transition: 1s ease;
+ 
+}
+
+  main section.uno div.card h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 0, 0);
+}
+
+  main section.uno div.card p{
+    padding: 1rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    color:rgb(0, 0, 0);
+}
+
+main section.uno div.card img{
+   
+    border-top-left-radius : 5%;
+    border-top-right-radius : 5%;
+    width: 18rem;
+    height: 12rem;
+}
+
+  
+
+
+/*IMGN*/
+
+main section.imgn{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:#fffefe;
+}
+main section.imgn img{
+    border-radius: 2%;
+    margin: 1rem;
+    margin-bottom: 1.2rem;
+    width: 18rem;
+    height: 15rem;
+    box-shadow: 0px 15px 15px #333;
+}
+
+
+  /*Termina informacion*/
+
+  footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5em;
+    background-color:  #000;
+    color: #f1ecdd;
+  }
+
+  footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+  }
+
+  footer nav ul li {
+    margin: 1rem 2rem;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+  }
+  footer section p{
+    justify-content: center;
+    text-align: center;
+}
+  footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+  }
+.media {
+  padding: 0.1em 1em;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.media:hover{
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+  /* Animacion .hvr-grow-shadow para los cards*/
+  .hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+   
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  } 
+    /* */
+
+    @media screen and (max-width: 1024px) {
+    
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+    }  
+    @media screen and (max-width: 480px) {
+
+      
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+
+      footer nav ul li a {
+        font-size: 1.5em;
+      }
+    }

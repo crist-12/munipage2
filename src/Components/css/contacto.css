@@ -1,0 +1,29 @@
+  
+main {
+    margin-top:8rem;
+    margin-bottom: 2em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+main {
+  margin-top:8rem;
+  margin-bottom: 2em;
+}
+
+
+ 

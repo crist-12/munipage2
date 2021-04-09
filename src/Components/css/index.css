@@ -1,0 +1,460 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-size:100%;
+    font-size:1em;
+}
+  
+/*Solo Dios sabe cómo funciona, así que no lo toque >:v */
+
+
+  /*Hasta aquí >:v */
+
+  main {
+    width: 100%;
+  }
+
+  main .parallax1 {
+    width: 100%;
+    height: 45rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/san-nicolas7.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main .parallax1 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  main .presentacion {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  main .presentacion .info {
+    font-family: 'Roboto';
+    padding: 1rem 2rem;
+    background-color: #E2E2E2;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+
+  main .presentacion .info .titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  main .presentacion img {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 40rem;
+  }
+
+  main .historia {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  main .historia .info {
+    font-family: 'Roboto';
+    padding: 1rem 2rem;
+    background-color: #E2E2E2;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  main .historia .info .titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  main .historia img {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 25rem;
+  }
+
+  main .parallax2 {
+    width: 100%;
+    height: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/aereo1.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main .parallax2 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  main .afterparallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333333;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  main .afterparallax .titulo {
+    font-family: 'Rock Salt';
+    color: #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  main .afterparallax .titulo p {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 0px;
+  }
+
+  main .afterparallax .datos {
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  main .afterparallax .datos .dato1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1rem;
+    width: 18rem;
+    height: 13rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main .afterparallax .datos .dato1:hover {
+    border: solid 2px #ffc107;
+  }
+
+  main .afterparallax .datos .dato1 .dato11{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato1 .dato12 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1rem;
+    width: 18rem;
+    height: 13rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main .afterparallax .datos .dato2:hover {
+    border: solid 2px #28a745;
+  }
+
+  main .afterparallax .datos .dato2 .dato21{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato2 .dato22 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5rem;
+    background-color:  #000;
+    color: #f1ecdd;
+  }
+
+  footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+  }
+
+  footer nav ul li {
+      margin: 1rem 2rem;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+  }
+  
+  footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+  }
+
+  .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+  }
+
+  .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  footer section p{
+      justify-content: center;
+      text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+    footer nav ul li {
+      box-sizing: border-box;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .titulo p {
+      text-align: center;
+      font-size: 0.8em;
+    }
+
+    main .afterparallax .titulo {
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .datos {
+      flex-wrap: wrap;
+    }
+
+    main .afterparallax .datos .dato1 {
+      border-color: #ffc107;
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .datos .dato2 {
+      border-color: #28a745;
+      margin-bottom: 1em;
+    }
+
+    main .parallax1 p {
+      text-align: center;
+    }
+
+    main .presentacion {
+      flex-direction: column-reverse;
+    }
+
+    main .presentacion img{
+      width: 100%;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 0px;
+    }
+
+    main .presentacion .info {
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 0%;
+      width: 100%;
+      font-size: 1.5em;
+    }
+
+    main .historia {
+      flex-direction: column;
+    }
+  
+    main .historia .info {
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 0%;
+      width: 100%;
+      font-size: 1.5em;
+    }
+  
+    main .historia img {
+      width: 100%;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+
+      
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+
+      footer nav ul li a {
+        font-size: 1.5em;
+      }
+  
+      main .afterparallax .titulo p {
+        text-align: center;
+        font-size: 0.7em;
+      }
+  
+      main .afterparallax .titulo {
+        margin-bottom: 1em;
+      }
+  
+      main .afterparallax .datos {
+        flex-wrap: wrap;
+      }
+  
+      main .afterparallax .datos .dato1 {
+        border-color: #ffc107;
+        margin-bottom: 1em;
+      }
+  
+      main .afterparallax .datos .dato2 {
+        border-color: #28a745;
+        margin-bottom: 1em;
+      }
+
+      main .parallax2 p {
+        font-size: 3em;
+      }
+  
+      main .parallax1 p {
+        text-align: center;
+        font-size: 3em;
+      }
+  
+      main .presentacion {
+        flex-direction: column-reverse;
+      }
+  
+      main .presentacion img{
+        width: 100%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 0px;
+      }
+  
+      main .presentacion .info {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 0%;
+        max-width: 100%;
+        font-size: 1.5em;
+      }
+  
+      main .historia {
+        flex-direction: column;
+      }
+    
+      main .historia .info {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 0%;
+        max-width: 100%;
+        font-size: 1.5em;
+      }
+    
+      main .historia img {
+        width: 100%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+      }
+
+      main .parallax1 {
+        background-attachment: local;
+      }
+
+      main .parallax2 {
+        background-attachment: local;
+      }
+    }
+  }

@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.logo img{
+    width: 250px;
+    position: absolute;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 10px;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+.menu ul li a{
+    color: #000;
+}
+
+.menu a{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #fff;
+    transition: 0.5s ease;
+    color: #000000;
+}
+
+.checkbtn{
+    float: right;
+    margin-top: 5px;
+    margin-right: 33px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn i{
+    font-size: 27px;
+}
+
+#chck{
+    display: none;
+}
+
+
+@media screen and (max-width:1185px){
+    .menu a{
+        border-bottom-style: none;
+    }
+    .logo img{
+        width: 200px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1141px){
+    .checkbtn{
+        display: block;
+    }
+    .menu a{
+        border-bottom-style: none;
+    }
+
+    .menu ul{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background: rgb(253, 252, 204);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+
+    .menu ul li a{
+        font-size: 20px;
+    }
+
+    .menu a:hover{
+        color: blue;
+    }
+
+    #chck:checked ~ ul {
+        left: 0;
+    }
+}
+
+header nav ul li .yellow {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .yellow:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #ffc107;
+  }
+
+  header nav ul li .yellow:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .yellow::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .yellow:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .yellow::before {
+    border-bottom: 2px solid #ffc107;
+  }
+
+  header nav ul li .green {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .green:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #28a745;
+  }
+
+  header nav ul li .green:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .green::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .green:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .green::before {
+    border-bottom: 2px solid #28a745;
+  }
+
+  header nav ul li .gray {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .gray:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #6c757d;
+  }
+
+  header nav ul li .gray:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .gray::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .gray:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .gray::before {
+    border-bottom: 2px solid #6c757d;
+  }

@@ -1,0 +1,172 @@
+
+body {
+  margin:0px;
+  padding:0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-size:100%;
+  font-size:1em;
+  margin-top:25px;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+header .logo{
+  flex: 1;
+}
+
+header nav {
+  margin-right: 2rem;
+}
+
+.logo img{
+  width: 200px;
+  height: 58px;
+}
+
+header nav ul{
+  padding:0px;
+  margin:0px;
+  list-style: none;
+  display:flex;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  color:#333;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+header nav ul li .yellow{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+header nav ul li .green{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+header nav ul li .gray{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+header nav ul li .yellow:hover{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #ffc107;
+}
+
+header nav ul li .green:hover{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #28a745;
+}
+
+header nav ul li .gray:hover{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #6c757d;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  margin: 40px 20px;
+}
+
+
+.right{
+ height: 900px;
+  margin: 0px 10px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 25%;
+  background: #6c757d;
+}
+
+.center{
+  margin: 0px 10px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 50%;
+  background: #6c757d;
+}
+
+.left{
+  margin: 0px 10px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 25%;
+  background: #6c757d;
+}
+
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding:1em;
+  background-color:  #f1ecdd;
+  columns: #000000;;
+}
+
+footer nav ul{
+  display:flex;
+  list-style: none;
+  padding:0px;
+}
+
+footer nav ul li {
+    margin: 0px 2em;
+}
+
+footer nav ul li a{
+  text-decoration: none;
+  color: #000000;
+  display:inline-block;
+  text-decoration:none;
+  padding:0.5em 1em;/* (Top Right Bottom Left) *//* (Top Bottom) (Right Left) */ /* TRBL  Top Right Bottom Left*/
+  text-align:center;
+}
+
+footer nav ul li a i{
+  width:33px;
+  vertical-align: middle;
+}
+
+footer section p{
+    justify-content: center;
+    text-align: center;
+}

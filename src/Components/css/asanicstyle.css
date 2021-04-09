@@ -1,0 +1,269 @@
+
+
+
+  /*Informacion*/
+  main {
+    margin-top:1rem;
+    width: 100%;
+
+    
+  }
+main section.asan{
+   
+    height: 15rem;
+    margin-bottom: -1rem;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-bottom-left-radius: 55%;
+   border-bottom-right-radius: 55%;
+}
+main section.asan div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+ 
+}
+main section.asan img{
+  
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(131, 120, 120);
+}
+main section.asan h1{
+   text-align: center;
+   
+}
+
+/*qhcm*/
+main section.qhcm {
+   margin-top: -5rem;
+    height: 25rem;
+    background-image: url("/assets/a\(6\).jpg");
+    background-repeat: no-repeat;
+    background-position-x: left ;
+    background-position-y: bottom ;
+    background-size: cover;
+}
+main section.qhcm h1{
+    padding-top: 5rem;
+    text-align: center;   
+    color: #fff;
+}
+main section.qhcm p{
+    font-size: 1.5rem;
+    text-align: center; 
+    justify-content: center;
+    color: #fff;  
+}
+    /*qhcm*/
+
+    /*paralax*/
+
+main section.paralax{
+    width: 100%;
+    height: 27rem;
+    background-image: url("../assets/a\(1\).jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+main section.paralax p{
+  
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #f1ecdd;
+
+}
+    /*paralax*/
+/*Card*/
+
+main section.uno{
+    
+  
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#c9cdd1;
+    background-image: url("/assets/a\(7\).JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.uno div.card{
+  
+  margin: 2rem;
+  border-radius: 5%;
+  height: 20rem;
+  width: 15rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px rgb(46, 46, 46);
+  border-color: #000;
+  
+}
+
+main section.uno div.card div p{
+    
+    padding: 1rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color:rgb(0, 0, 0);
+}
+main section.uno div.card div{
+    
+  height: 18rem;
+  width: 15rem;
+}
+
+main section.uno div.card div.top{
+    
+  
+   margin-top: -0.5rem;
+   border-top-left-radius: 55%;
+   border-top-right-radius: 55%;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #ffc107;
+    
+}
+main section.uno div.card div.down{
+    
+   
+    
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    height: 1.5rem;
+    width: 15rem;
+    background-color:#28a745;
+    
+}
+
+/*Card*/
+
+  /*Termina informacion*/
+
+  footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5em;
+    background-color:  #000;
+    color: #f1ecdd;
+  }
+
+  footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+  }
+
+  footer nav ul li {
+    margin: 1rem 2rem;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+  }
+  footer section p{
+    justify-content: center;
+    text-align: center;
+}
+  footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+  }
+.media {
+  padding: 0.1em 1em;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.media:hover{
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+  /* Animacion .hvr-grow-shadow para los cards*/
+  .hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+   
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  } 
+    /* */
+
+    @media screen and (max-width: 1024px) {
+    
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+    }  
+    @media screen and (max-width: 480px) {
+
+      
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+
+      footer nav ul li a {
+        font-size: 1.5em;
+      }
+    }

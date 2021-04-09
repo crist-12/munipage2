@@ -1,0 +1,212 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #ededed;
+  font-size:100%;
+  font-size:1em;
+  width: 100%;
+}
+
+header{
+  background-color: #ffffff;
+}
+
+main {
+  margin-bottom: 2em;
+  margin-top: 1.3em;
+}
+
+main section.content{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+flex-wrap: wrap;
+}
+main  section.Informacion {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+  margin: 1rem 2rem;
+  position: relative;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px;
+}
+
+main section.Informacion h1 {
+  font-size: 2rem;
+  padding-top:0.8rem;
+}
+
+main section.Informacion p {
+  padding-top: 0.8rem;
+  margin: 0.5rem 1.2rem;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+  }
+
+
+main  section.bloques {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 1rem 1rem 1rem 0rem;
+
+}
+
+main section.bloque{
+    display: flex;
+    margin-bottom:  0.5rem;
+    padding: 0;
+    box-shadow: 0 0 10px;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    
+  }
+
+
+main section.bloque div.Municipalidad img {
+ width: 10rem;
+ height: 10rem;
+ Margin-top: 1.5rem;
+ margin-bottom: 1rem;
+ border-radius: 2rem;
+justify-content: center;
+}
+
+main  section.bloque1 {
+display: flex;
+margin-top: 1rem;
+z-index: 0;
+padding: 0;
+box-shadow: 0 0 10px;
+justify-content: center;
+border-radius: 2rem;
+background-color: #ffffff;
+
+}
+
+main section.bloque1 div.Escudo img{
+width: 10rem;
+height: 10rem;
+Margin-top: 2.5rem;
+margin-bottom: 1rem;
+border-radius: 2rem;
+justify-content: center;
+}
+
+@media screen and (max-width:1024px){
+
+
+main section.content{
+  margin-left: 3rem;
+}
+
+main section.Informacion {
+  margin:0.5rem 0rem 1rem 0rem;
+}
+
+main section.Informacion h1 {
+  font-size: 2rem;
+  padding-top:0.8rem ;
+  margin: 1rem 1rem 0.5rem 1.5rem;
+  
+}
+
+}
+
+/*      aqui comienza el footer          */
+
+footer{
+
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+padding:0.5em;
+background-color:  #000;
+color: #f1ecdd;
+}
+
+footer nav ul{
+display:flex;
+list-style: none;
+padding:0px;
+}
+
+footer nav ul li {
+  margin: 0px 2em;
+}
+
+footer nav ul li a{
+text-decoration: none;
+color: #f1ecdd;
+display:inline-block;
+text-decoration:none;
+padding: 0em 1em;
+text-align:center;
+font-size: 1.05rem;
+}
+
+footer nav ul li a i{
+width:33px;
+vertical-align: middle;
+}
+
+.media {
+padding: 0.1em 1em;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+}
+
+.media:hover{
+-webkit-animation-name: hvr-pop;
+animation-name: hvr-pop;
+-webkit-animation-duration: 0.5s;
+animation-duration: 0.5s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-pop {
+50% {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+}
+@keyframes hvr-pop {
+50% {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+}
+
+footer section p{
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+footer nav ul li {
+  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+footer nav ul {
+  flex-direction: column;
+}
+
+footer nav ul li a {
+  font-size: 1.5em;
+}
+}
