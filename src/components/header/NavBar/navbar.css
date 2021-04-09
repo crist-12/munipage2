@@ -1,0 +1,36 @@
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+nav ul li a {
+    display: inline-flex;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color:#000;
+}
+
+
+@media screen and (max-width: 1020px) {}
+
+@media screen and (max-width: 480px) {
+    nav ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        
+    }
+
+    .nl {
+        display: block;
+        border-top: 1px solid #000;
+        height: 3.5rem;
+    }
+}

@@ -1,0 +1,13 @@
+
+header{
+    box-shadow: 1px 1px 10px #1E1E1E;
+}
+
+img {
+    width: 16rem;
+    height: 5rem;
+}
+
+@media screen and (max-width: 1020px) {}
+
+@media screen and (max-width: 480px) {}

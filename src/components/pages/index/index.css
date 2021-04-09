@@ -1,0 +1,357 @@
+
+  section .parallax1 {
+    width: 100%;
+    height: 45rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../assets/san-nicolas7.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section .parallax1 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  .cuadro1 {
+    font-family: 'Roboto';
+    width: 60%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+
+  .titulo_menor{
+    font-size: 1.2rem;
+  }
+
+  .cuadro1_img {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 40%;
+    height: 30rem;
+  }
+
+  .cuadro2 {
+    font-family: 'Roboto';
+    width: 60%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 10%;
+  }
+
+  .cuadro2_img {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 40%;
+    height: 30rem;
+  }
+
+  section .parallax2 {
+    width: 100%;
+    height: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../assets/aereo1.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section .parallax2 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  section .afterparallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333333;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  section .afterparallax .titulo {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  section .afterparallax .titulo p {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 0px;
+  }
+
+  section .afterparallax .datos {
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  section .afterparallax .datos .dato1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1rem;
+    width: 18rem;
+    height: 16rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  section .afterparallax .datos .dato1:hover {
+    border: solid 2px #ffc107;
+  }
+
+  section .afterparallax .datos .dato1 .dato11{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  section .afterparallax .datos .dato1 .dato12 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  section .afterparallax .datos .dato2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1rem;
+    width: 18rem;
+    height: 16rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  section .afterparallax .datos .dato2:hover {
+    border: solid 2px #28a745;
+  }
+
+  section .afterparallax .datos .dato2 .dato21{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  section .afterparallax .datos .dato2 .dato22 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+
+  .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+  }
+
+  .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    
+    section .afterparallax .titulo p {
+      text-align: center;
+      font-size: 1.7em;
+    }
+
+    section .afterparallax .titulo {
+      margin-bottom: 1em;
+    }
+
+    section .afterparallax .datos {
+      flex-wrap: wrap;
+    }
+
+    section .afterparallax .datos .dato1 {
+      border-color: #ffc107;
+      margin-bottom: 1em;
+    }
+
+    section .afterparallax .datos .dato2 {
+      border-color: #28a745;
+      margin-bottom: 1em;
+    }
+
+    section .parallax1 p {
+      text-align: center;
+    }
+
+    section .presentacion {
+      flex-direction: column;
+    }
+
+    section .presentacion img{
+      width: 100%;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 0%;
+      border-bottom-left-radius: 0%;
+    }
+
+    section .presentacion .cuadro1 {
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      width: 100%;
+      font-size: 1.5em;
+    }
+
+    section .historia {
+      flex-direction: column;
+    }
+  
+    section .historia .cuadro2 {
+      border-top-left-radius: 26px;
+      border-bottom-left-radius: 0%;
+      width: 100%;
+      font-size: 1.5em;
+    }
+  
+    section .historia img {
+      width: 100%;
+      border-bottom-right-radius: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+  
+      section .afterparallax .titulo p {
+        text-align: center;
+        font-size: 1.3em;
+      }
+  
+      section .afterparallax .titulo {
+        margin-bottom: 1em;
+      }
+  
+      section .afterparallax .datos {
+        flex-wrap: wrap;
+      }
+  
+      section .afterparallax .datos .dato1 {
+        border-color: #ffc107;
+        margin-bottom: 1em;
+      }
+  
+      section .afterparallax .datos .dato2 {
+        border-color: #28a745;
+        margin-bottom: 1em;
+      }
+
+      section .parallax2 p {
+        font-size: 3em;
+      }
+  
+      section .parallax1 p {
+        text-align: center;
+        font-size: 3em;
+      }
+  
+      section .presentacion {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+  
+      section .presentacion img{
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+      }
+  
+      section .presentacion .cuadro1 {
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        max-width: 100%;
+        font-size: 1.5em;
+      }
+  
+      section .historia {
+        flex-direction: column;
+      }
+    
+      section .historia .cuadro2 {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 0%;
+        max-width: 100%;
+        font-size: 1.5em;
+      }
+    
+      section .historia img {
+        width: 100%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+      }
+
+      section .parallax1 {
+        background-attachment: local;
+      }
+
+      section .parallax2 {
+        background-attachment: local;
+      }
+    }
+  }
