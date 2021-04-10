@@ -9,6 +9,8 @@ import Galeria from './Components/pages/galeria/Galeria.js'
 import Footer from './Components/Footer/Footer'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './Components/pages/login/Login';
+import SignUp from './Components/pages/login/SignUp';
 
 function App() {
   return (
@@ -39,6 +41,13 @@ function App() {
           </Route>
           <Route path="/contacto" exact>
             
+          </Route>
+          <Route path="/login" exact>
+            <Login />
+          </Route>
+
+          <Route path="/signup" exact>
+            <SignUp />
           </Route>
         </Switch>
       </section>
