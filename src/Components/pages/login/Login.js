@@ -37,7 +37,12 @@ function Login(){
                     <input type="password" id="UsrPwd" value={UsrPwd} onChange={(e)=>setUsrPwd(e.target.value)} className="form-control" placeholder="Enter password" />
                 </div>
     
-                <button className="btn btn-primary btn-block" onClick={login}>LOGIN</button>
+                <button className="btn btn-primary btn-block" onClick={(e)=>{e.preventDefault();
+            e.stopPropagation()
+                    login()
+        }
+
+}>LOGIN</button>
                 <p className="forgot-password text-right" >
                     No tienes cuenta? <a href="/signUp">sign up?</a>
                 </p>
