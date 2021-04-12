@@ -1,0 +1,138 @@
+
+ section .parallax {
+    width: 100%;
+    height: 27rem;
+    background-image: url("../../../assets/a\(1\).jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+ section .parallax p{
+  
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #f1ecdd;
+
+}
+
+section .hacemos{
+    margin-top: -5rem;
+    height: 25rem;
+    background-image: url("../../../assets/a\(6\).jpg");
+    background-repeat: no-repeat;
+    background-position-x: left ;
+    background-position-y: bottom ;
+    background-size: cover;
+}
+
+section .hacemos h1{
+
+    padding-top: 5rem;
+    text-align: center;   
+    color: #fff;
+}
+
+section .hacemos p{
+
+    font-size: 1.5rem;
+    text-align: center; 
+    justify-content: center;
+    color: #fff;  
+}
+
+section .uno{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#c9cdd1;
+    background-image: url("../../../assets/a\(7\).JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+ 
+
+ section.uno div.card{
+  
+  margin: 2rem;
+  border-radius: 5%;
+  height: 20rem;
+  width: 15rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px rgb(46, 46, 46);
+  border-color: #000;
+  
+}
+
+ section.uno div.card div p{
+    
+    padding: 1rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color:rgb(0, 0, 0);
+}
+ section.uno div.card div{
+    
+  height: 18rem;
+  width: 15rem;
+}
+
+ section.uno div.card div.top{
+    
+  
+   margin-top: -0.5rem;
+   border-top-left-radius: 55%;
+   border-top-right-radius: 55%;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #ffc107;
+    
+}
+ section.uno div.card div.down{
+    
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    height: 1.5rem;
+    width: 15rem;
+    background-color:#28a745;
+    
+}
+
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+   
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  } 
+
+.img1{
+
+    width: 10rem;
+    height: 10rem;  
+    
+    
+}

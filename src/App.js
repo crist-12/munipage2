@@ -11,6 +11,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/pages/login/Login';
 import SignUp from './Components/pages/login/SignUp';
+import Asanic from './Components/pages/asanic/asanic';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
 
           </Route>
           <Route path="/asanic" exact>
-            
+            <Asanic />
           </Route>
           <Route path="/galeria" exact>
             <Galeria />
