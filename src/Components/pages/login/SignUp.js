@@ -23,7 +23,7 @@ function SignUp(){
 
     const handlerVerify = () => {
        
-       
+       try {
             //Verificar el correo electronico
             if (!UsrEmail)
                 setEmailError(true);
@@ -47,11 +47,15 @@ function SignUp(){
             )
            { 
             signup(UsrEmail,UsrPwd);
-           // alert("Cuenta creada regrese ala pantalla anterior")
+         alert("Cuenta creada regrese ala pantalla anterior")
         }
             else {setError("All fields are required!")
             alert(" "+UsrPwd+""+UsrEmail+"  estan vacios")
             };
+        }
+        catch (error) {
+            alert ("No se puede crear cuenta")
+        }
           
 
     }

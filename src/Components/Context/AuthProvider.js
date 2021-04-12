@@ -7,7 +7,7 @@ const authReducer = (state, action) => {
         case "errorMessage":
             return { ...state, errorMessage: action.payload };
         case "signin":
-            return { ...state, user: action.payload, loggedIn: action.loggedIn };
+            return { ...state, user: action.payload, loggedIn:true };
         case "signout":
             return { ...state, user: action.payload, loggedIn: false };
         case "signup":
@@ -35,7 +35,7 @@ const signin = (dispatch) => (email, password) => {
         .then((response)=>{
                          // Llamar el reducer y enviarle los valores del usuario al estado
                          dispatch({ type: "errorMessage", payload: "" });
-                         dispatch({ type: "signin", payload: response , loggedIn:true  });
+                         dispatch({ type: "signin", payload: response});
                          alert("se logueo correctamente")
         })
          .catch((error) => {

@@ -6,11 +6,15 @@ import { validate } from "email-validator";
 function Login(){
     const {state,signin} = useContext(AuthContext)
 
-    const [UsrEmail, setUsrEmail] = useState(null);
-    const [UsrPwd, setUsrPwd] = useState(null);
+    const [UsrEmail, setUsrEmail] = useState("");
+    const [UsrPwd, setUsrPwd] = useState("");
 
     const login = ()=>{
-        signin(UsrEmail,UsrPwd)
+        try {
+           signin(UsrEmail,UsrPwd)
+        }catch (error) {
+            alert ("hubo un error en login")
+        }
         
     }
 
