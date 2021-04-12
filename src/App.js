@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import BrandHeader from "./Components/header/BrandHeader/brandHeader";
 import { BrowserRouter as Router, MemoryRouter, Route, Switch} from 'react-router-dom';
@@ -11,13 +11,28 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/pages/login/Login';
 import SignUp from './Components/pages/login/SignUp';
+import {Context as AuthContext} from './Components/Context/AuthProvider'
 
-function App() {
+const App = () => {
+   const { state,persistLogin}  = useContext (AuthContext)
+   const data = false
+ useEffect(()=>{
+   persistLogin();
+ },[])
+
   return (
+    <>
+    {!state.loading && (
+    <>{
+      state.loggedIn ? (
     <Router>
       <BrandHeader></BrandHeader>
+      
       <section>
+      
         <Switch>
+          
+      
           <Route path="/" exact>
               <Index />
           </Route>
@@ -42,6 +57,20 @@ function App() {
           <Route path="/contacto" exact>
             
           </Route>
+          
+        </Switch>
+      
+        
+      </section>
+        
+      <Footer></Footer>
+    
+    </Router>): (
+      <Router>
+        <Switch>
+        <Route path="/" exact>
+          <Login />
+          </Route>
           <Route path="/login" exact>
             <Login />
           </Route>
@@ -49,10 +78,16 @@ function App() {
           <Route path="/signup" exact>
             <SignUp />
           </Route>
+       
         </Switch>
-      </section>
-      <Footer></Footer>
-    </Router>
+        </Router>
+
+    )}
+    
+    
+  </>
+    )}
+    </>
   );
 }
 

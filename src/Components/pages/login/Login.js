@@ -1,10 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {useState} from 'react'
-
+import {useState,useEffect,useContext} from 'react'
+import { Context as AuthContext} from "../../Context/AuthProvider"
+import { validate } from "email-validator";
 
 function Login(){
+    const {state,signin} = useContext(AuthContext)
+
     const [UsrEmail, setUsrEmail] = useState(null);
     const [UsrPwd, setUsrPwd] = useState(null);
+
+    const login = ()=>{
+        signin(UsrEmail,UsrPwd)
+        
+    }
+
+    useEffect(() => {
+        if (state.errorMessage) alert(state.errorMessage);
+      }, [state.errorMessage]);
     
     return(
         <div className="m-5 border rounded shadow-lg">
@@ -21,9 +33,9 @@ function Login(){
                     <input type="password" id="UsrPwd" value={UsrPwd} onChange={(e)=>setUsrPwd(e.target.value)} className="form-control" placeholder="Enter password" />
                 </div>
     
-                <button type="submit" className="btn btn-primary btn-block">LOGIN</button>
-                <p className="forgot-password text-right">
-                    No tienes cuenta? <a href="">sign up?</a>
+                <button className="btn btn-primary btn-block" onClick={login}>LOGIN</button>
+                <p className="forgot-password text-right" >
+                    No tienes cuenta? <a href="/signUp">sign up?</a>
                 </p>
             </form>
         </div>
