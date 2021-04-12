@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/pages/login/Login';
 import SignUp from './Components/pages/login/SignUp';
 import {Context as AuthContext} from './Components/Context/AuthProvider'
+import Asanic from './Components/pages/asanic/asanic';
 
 const App = () => {
    const { state,persistLogin}  = useContext (AuthContext)
@@ -19,6 +20,7 @@ const App = () => {
  useEffect(()=>{
    persistLogin();
  },[])
+
 
   return (
     <>
@@ -43,7 +45,7 @@ const App = () => {
 
           </Route>
           <Route path="/asanic" exact>
-            
+            <Asanic />
           </Route>
           <Route path="/galeria" exact>
             <Galeria />

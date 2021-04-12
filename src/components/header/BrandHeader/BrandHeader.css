@@ -2,6 +2,10 @@
 header{
     box-shadow: 1px 1px 10px #1E1E1E;
 }
+ 
+.Conteiner .Row .Col .div .conteiner{
+ margin-top: 10;
+}
 
 img {
     width: 16rem;

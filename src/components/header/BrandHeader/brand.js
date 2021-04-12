@@ -13,7 +13,7 @@ const Brand = () => {
             <Row>
                 <Col > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8OntDrWdz4puTSrLeF6oPLAsVPuJuCr-VQ&usqp=CAU" alt="Municipalidad de San Nicolás" /></Col>
                 <Col xs={7}></Col>
-                <Col ><div  classname="justify-content"><Signout /></div></Col>
+                <Col ><div style={{marginTop:25}}><Signout /></div></Col>
             </Row>
 
         </Container>

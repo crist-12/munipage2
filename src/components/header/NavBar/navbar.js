@@ -4,13 +4,9 @@ import "./navbar.css"
 function NavBar () {
     let dummyData = [
         {label: "Inicio", uri: "/"},
-        {label: "MuniApp", uri: "/muniapp"},
-        {label: "Munasbar", uri: "/munasbar"},
         {label: "Asanic", uri: "/asanic"},
         {label: "Galería", uri: "/galeria"},
-        {label: "Plan de Arbitrios", uri: "/arbitrios"},
-        {label: "Noticias", uri: "/noticias"},
-        {label: "Contáctanos", uri: "/contacto"},
+
     ];
 
     let navBarItems = dummyData.map((o, i)=>{
