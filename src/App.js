@@ -11,6 +11,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/pages/login/Login';
 import SignUp from './Components/pages/login/SignUp';
+import Landing from './Components/pages/landing/Landing'
 
 function App() {
   return (
@@ -39,8 +40,8 @@ function App() {
           <Route path="/noticias" exact>
             
           </Route>
-          <Route path="/contacto" exact>
-            
+          <Route path="/landing" exact>
+            <Landing/>
           </Route>
           <Route path="/login" exact>
             <Login />

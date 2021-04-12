@@ -11,6 +11,7 @@ function NavBar () {
         {label: "Plan de Arbitrios", uri: "/arbitrios"},
         {label: "Noticias", uri: "/noticias"},
         {label: "Contáctanos", uri: "/contacto"},
+        {label: "Landing", uri: "/landing"},
     ];
 
     let navBarItems = dummyData.map((o, i)=>{
