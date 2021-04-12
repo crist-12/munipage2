@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import BrandHeader from "./Components/header/BrandHeader/brandHeader";
 import { BrowserRouter as Router, MemoryRouter, Route, Switch} from 'react-router-dom';
@@ -12,13 +12,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/pages/login/Login';
 import SignUp from './Components/pages/login/SignUp';
 import Landing from './Components/pages/landing/Landing'
+import {Context as AuthContext} from './Components/Context/AuthProvider'
+import Asanic from './Components/pages/asanic/asanic';
 
-function App() {
+const App = () => {
+   const { state,persistLogin}  = useContext (AuthContext)
+   const data = false
+ useEffect(()=>{
+   persistLogin();
+ },[])
+
+
   return (
+    <>
+    {!state.loading && (
+    <>{
+      state.loggedIn ? (
     <Router>
       <BrandHeader></BrandHeader>
+      
       <section>
+      
         <Switch>
+          
+      
           <Route path="/" exact>
               <Index />
           </Route>
@@ -29,7 +46,7 @@ function App() {
 
           </Route>
           <Route path="/asanic" exact>
-            
+            <Asanic />
           </Route>
           <Route path="/galeria" exact>
             <Galeria />
@@ -43,6 +60,20 @@ function App() {
           <Route path="/landing" exact>
             <Landing/>
           </Route>
+          
+        </Switch>
+      
+        
+      </section>
+        
+      <Footer></Footer>
+    
+    </Router>): (
+      <Router>
+        <Switch>
+        <Route path="/" exact>
+          <Login />
+          </Route>
           <Route path="/login" exact>
             <Login />
           </Route>
@@ -50,10 +81,16 @@ function App() {
           <Route path="/signup" exact>
             <SignUp />
           </Route>
+       
         </Switch>
-      </section>
-      <Footer></Footer>
-    </Router>
+        </Router>
+
+    )}
+    
+    
+  </>
+    )}
+    </>
   );
 }
 
