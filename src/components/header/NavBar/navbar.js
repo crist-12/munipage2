@@ -6,6 +6,7 @@ function NavBar () {
         {label: "Inicio", uri: "/"},
         {label: "Asanic", uri: "/asanic"},
         {label: "Galería", uri: "/galeria"},
+         {label: "Landing", uri: "/landing"},
     ];
 
     let navBarItems = dummyData.map((o, i)=>{
